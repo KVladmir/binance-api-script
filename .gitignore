@@ -1,0 +1,5 @@
+grafana/
+influxdb/
+config.json
+influxdb.env
+.DS_Store
