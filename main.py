@@ -54,7 +54,7 @@ class getRequest:
             jresponse = response.json()
         except Exception as e:
             print(e)
-            pass
+
         medianArray = []
 
         for adv in jresponse['data']:
@@ -68,7 +68,6 @@ class getRequest:
                 medianArray.append(float(adv['adv']['price']))
             except Exception as e:
                 print(e)
-                pass
 
         try:
             medianPrice = statistics.median(medianArray)
@@ -79,7 +78,6 @@ class getRequest:
             client.close()
         except Exception as e:
             print(e)
-            pass
 
 
 if __name__ == "__main__":
